@@ -1,12 +1,15 @@
+'use strict';
+
 const navbar = document.querySelector('.container');
+const nav_about = document.querySelector('.nav-about');
+const nav_reviews = document.querySelector('.nav-reviews');
+const aboutSection = document.getElementById('about');
 
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 60) {
-    navbar.style.boxShadow = '0px 0px 8px 0px rgba(0, 0, 0, 0.15)';
-    navbar.style.backgroundColor = '#fff';
-    navbar.style.transition = 'all .3s ease-out';
+  console.log(window.scrollY);
+  if (window.scrollY > 3340) {
+    document.querySelector('.bx-up-arrow-circle').style.opacity = 1;
   } else {
-    navbar.style.boxShadow = 'none';
-    navbar.style.transition = 'all .3s ease-out';
+    document.querySelector('.bx-up-arrow-circle').style.opacity = 0;
   }
 });

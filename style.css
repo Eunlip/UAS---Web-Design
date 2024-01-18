@@ -16,7 +16,6 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: var(--color-dark-white);
 }
 
 a {
@@ -28,15 +27,14 @@ li {
   list-style-type: none;
 }
 
-.container {
-  background: #fff;
+/* .container {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 99999;
   margin-bottom: 10rem;
-}
+} */
 
 /* toogle darkmode */
 
@@ -51,7 +49,7 @@ li {
 
 .header-logo {
   width: 10rem;
-  margin-left: -0.5rem;
+  margin-left: 1.2rem;
   margin-top: 0.5rem;
 }
 
@@ -66,6 +64,22 @@ li {
 
 .navigation a {
   font-size: 1.2rem;
+  position: relative;
+}
+
+.navigation a:after {
+  content: '';
+  position: absolute;
+  background-color: var(--color-yellow);
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  transition: all 0.3s ease-out;
+}
+
+.navigation a:hover:after {
+  width: 100%;
 }
 
 .hamburger {
@@ -81,7 +95,7 @@ li {
   align-items: center;
   gap: 11rem;
   overflow: hidden;
-  margin-top: 7rem;
+  margin-top: 2rem;
 
   /* border-bottom: 1px solid red; */
 }
@@ -141,13 +155,25 @@ li {
   top: -0.7rem;
 }
 
+.bx-up-arrow-circle {
+  position: fixed;
+  font-size: 3rem;
+  z-index: 100000;
+  bottom: 3rem;
+  right: 5rem;
+  cursor: pointer;
+  color: var(--color-white);
+}
+
 /* About */
 .about {
   margin-top: 5rem;
-  height: 60vh;
+  height: 80vh;
+  opacity: 0;
   display: flex;
   flex-direction: column;
-  background-image: url(./images/banner-maxim-2.png);
+  background-image: url(./images/bg-maxim-transformed.jpeg);
+  background-position: center;
   background-size: cover;
   position: relative;
   justify-content: center;
@@ -160,7 +186,7 @@ li {
   left: 0;
   right: 0;
   height: 100%;
-  width: 98.9vw;
+  width: 100%;
 }
 
 .title h2 {
@@ -179,7 +205,7 @@ li {
 
 /* Explain transport */
 .explain {
-  height: 100vh;
+  height: 90vh;
 }
 
 .explain-transport {
@@ -188,15 +214,14 @@ li {
   flex-direction: row-reverse;
   align-items: center;
   margin: 0 auto;
-  padding-top: 10rem;
+  padding-top: 2rem;
   gap: 7rem;
-  padding-bottom: 15rem;
   max-width: 1140px;
 }
 
 .explain-transport__left h2,
 .explain-transport__left p {
-  width: 31.5rem;
+  width: 33rem;
 }
 
 .explain-transport__left h2,
@@ -215,6 +240,7 @@ li {
 
 .explain-img .transportasi {
   width: 31rem;
+  height: 30rem;
   border-radius: 20px;
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
 }
@@ -225,11 +251,10 @@ li {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding-top: 10rem;
   gap: 7rem;
-  padding-bottom: 15rem;
   max-width: 1140px;
   margin: 0 auto;
+  padding-top: 5rem;
 }
 
 .explain-transport__left h2 span,
@@ -243,10 +268,8 @@ li {
   justify-content: space-between;
   align-items: center;
   /* border: 1px solid red; */
-  background-color: #f6f2f2;
-  height: 90vh;
-  padding: 3rem 5rem;
-  margin: 3rem 0;
+  height: 100vh;
+  padding-inline: 5rem;
 }
 
 .show-mockup__left {
@@ -264,6 +287,7 @@ li {
   font-size: 1.5rem;
   font-weight: 500;
   color: rgb(17, 17, 229);
+  text-decoration: underline;
 }
 
 .show-mockup__left .a i {
@@ -288,7 +312,7 @@ li {
 /* Reviewer */
 .review {
   padding-top: 5rem;
-  padding-bottom: 8rem;
+  padding-bottom: 15rem;
 }
 
 .review h2 {
@@ -313,13 +337,8 @@ li {
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
 }
 
-.card:nth-of-type(1) {
-  background-color: var(--color-dark-green);
-  color: #fff;
-}
-
 .card:hover {
-  background-color: var(--color-dark-green);
+  background-color: #242732;
   color: #fff;
   transition: all 1s linear;
 }
@@ -382,7 +401,7 @@ li {
 /* Footer */
 .footer-basic {
   padding: 40px 0;
-  background-color: var(--color-dark-green);
+  background-color: #242732;
   color: var(--color-white);
 }
 

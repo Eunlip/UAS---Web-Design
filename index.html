@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Maxim Website</title>
+    <title>Maxim</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="images/favicon-maxim.png" type="image/x-icon" />
     <!-- AOS css -->
@@ -12,32 +12,49 @@
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   </head>
   <body>
+    <a href="#"><i class="bx bx-up-arrow-circle" data-aos="fade-in" title="Kembali ke Atas"></i></a>
     <!-- Header -->
-    <div class="container">
-      <header class="header">
-        <div class="div">
-          <img src="./images/maxim-logo-brand.svg" alt="logo" class="header-logo" />
-        </div>
-        <!-- Navigation -->
-        <nav class="navbar">
+    <header class="header">
+      <div class="div">
+        <a href="#">
+          <img
+            src="./images/maxim-logo-brand.svg"
+            alt="logo"
+            class="header-logo"
+            data-aos="fade-down"
+            data-aos-duration="1000" />
+        </a>
+      </div>
+      <!-- Navigation -->
+      <!-- <nav class="navbar">
           <ul class="navigation">
             <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#review">Review</a></li>
+            <li><a href="#about" class="nav-about">About</a></li>
+            <li><a href="#review" class="nav-reviews">Review</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
           <div class="hamburger">
             <i class="bx bx-menu"></i>
           </div>
-        </nav>
-      </header>
-    </div>
+        </nav> -->
+    </header>
 
     <!-- Hero -->
     <section class="hero">
-      <div class="hero-left" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
-        <h1 class="hero-title">Ter<span>hubung </span>setiap saat</h1>
-        <div class="btn-hero">
+      <div class="hero-left">
+        <h1
+          class="hero-title"
+          data-aos="fade-down-right"
+          data-aos="fade-up-right"
+          data-aos-duration="1000"
+          data-aos-delay="300">
+          Ter<span>hubung </span>setiap saat
+        </h1>
+        <div
+          class="btn-hero"
+          data-aos="fade-up-right"
+          data-aos-duration="1000"
+          data-aos-delay="500">
           <a
             href="https://apps.apple.com/id/app/maxim-transportasi-delivery/id579985456?l=id"
             target="_blank"
@@ -47,11 +64,12 @@
           <a
             href="https://play.google.com/store/apps/details?id=com.taxsee.taxsee&hl=id&gl=US"
             target="_blank"
+            data-aos="fade-top-right"
             ><img src="./images/playstore.svg" alt=""
           /></a>
         </div>
       </div>
-      <div class="hero-right" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="400">
+      <div class="hero-right" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="700">
         <div class="motor">
           <img
             class="motor-yellow"
@@ -65,64 +83,13 @@
     </section>
 
     <!-- about -->
-    <section class="about" id="about">
+    <section class="about" id="about" data-aos="fade-up">
       <div class="overlay"></div>
       <div class="title">
         <h2>
-          <span>Maxim</span> adalah layanan transportasi bagi masyarakat melalui jasa ojek dan taxi
-          online
+          <span>Maxim</span> merupakan layanan transportasi bagi masyarakat melalui jasa ojek dan
+          taxi online
         </h2>
-      </div>
-    </section>
-
-    <!--Explain order transportation -->
-    <section class="explain">
-      <div class="explain-transport">
-        <div
-          class="explain-transport__left"
-          data-aos="fade-left"
-          data-aos-duration="1500"
-          data-aos-delay="200">
-          <h2>Mau Pergi?<span>MaxBike</span>-in aja</h2>
-          <p>
-            Perjalanan keliling kota, antarkota, stasiun kereta atau bandara. Promosi dan diskon,
-            kode promosi.
-          </p>
-        </div>
-        <div
-          class="explain-transport__right"
-          data-aos="fade-right"
-          data-aos-duration="1500"
-          data-aos-delay="400">
-          <div class="explain-img">
-            <img class="transportasi" src="./images/maxim-bike-ai.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="explain">
-      <div class="explain-transport__reverse">
-        <div
-          class="explain-transport__left-reverse"
-          data-aos="fade-right"
-          data-aos-duration="1500"
-          data-aos-delay="200">
-          <h2>Laper? Cobain <span>MaxFood</span> yuk</h2>
-          <p>
-            Kini maxim menghadirkan fitur untuk siapa saja yang ingin memesan makanan secara mudah
-            dan cepat.
-          </p>
-        </div>
-        <div
-          class="explain-transport__right-reverse"
-          data-aos="fade-left"
-          data-aos-duration="1500"
-          data-aos-delay="400">
-          <div class="explain-img">
-            <img class="transportasi" src="./images/maxim-food-ai.jpg" alt="" />
-          </div>
-        </div>
       </div>
     </section>
 
@@ -130,7 +97,11 @@
     <section class="show-mockup">
       <div class="show-mockup__left" data-aos="fade-right" data-aos-duration="1000">
         <h2>UI yang modern dan mudah untuk di pahami</h2>
-        <a href="#" class="a">Selengkapnya <i class="bx bx-chevron-right"></i></a>
+        <a
+          href="https://www.figma.com/file/N3KvXmDYCMiWplt3RQf1ch/CLONE-APLIKASI-MAXIM?type=design&node-id=193%3A2&mode=design&t=iI8sxwnC0KBuka9p-1"
+          class="a"
+          >Selengkapnya <i class="bx bx-chevron-right"></i
+        ></a>
       </div>
       <div class="show-mockup__right">
         <img
@@ -154,6 +125,57 @@
       </div>
     </section>
 
+    <!--Explain maxim feature -->
+    <section class="explain">
+      <div class="explain-transport">
+        <div
+          class="explain-transport__left"
+          data-aos="fade-left"
+          data-aos-delay="900"
+          data-aos-duration="1000">
+          <h2>Mau Pergi?<span>MaxiBike</span>-in aja</h2>
+          <p>
+            Perjalanan keliling kota, antarkota, stasiun kereta atau bandara. Promosi dan diskon,
+            kode promosi.
+          </p>
+        </div>
+        <div
+          class="explain-transport__right"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="500">
+          <div class="explain-img">
+            <img class="transportasi" src="./images/maxim-bike-ai.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="explain">
+      <div class="explain-transport__reverse">
+        <div
+          class="explain-transport__left-reverse"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="900">
+          <h2>Laper? Cobain <span>MaxiFood</span> yuk</h2>
+          <p>
+            Kini maxim menghadirkan fitur untuk siapa saja yang ingin memesan makanan secara mudah
+            dan cepat.
+          </p>
+        </div>
+        <div
+          class="explain-transport__right-reverse"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-delay="500">
+          <div class="explain-img">
+            <img class="transportasi" src="./images/maxim-food-ai.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- reviewer -->
     <section class="review" id="review">
       <h2>Read the reviews</h2>
@@ -162,7 +184,7 @@
           <div class="card-top">
             <div class="card-profile">
               <img src="./images/face-1.png" alt="" />
-              <p>John Doe</p>
+              <p>Alif Pahreza</p>
             </div>
             <p>July 1, 2003</p>
           </div>
@@ -185,7 +207,7 @@
           <div class="card-top">
             <div class="card-profile">
               <img src="./images/face-1.png" alt="" />
-              <p>John Doe</p>
+              <p>Habibie</p>
             </div>
             <p>July 1, 2003</p>
           </div>
@@ -207,7 +229,7 @@
           <div class="card-top">
             <div class="card-profile">
               <img src="./images/face-1.png" alt="" />
-              <p>John Doe</p>
+              <p>Husein</p>
             </div>
             <p>July 1, 2003</p>
           </div>
@@ -250,7 +272,7 @@
           <li class="list-inline-item"><a href="#">Terms</a></li>
           <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
         </ul>
-        <p class="copyright">Alif Pahreza © 2023</p>
+        <p class="copyright">Designed By Alif Pahreza</p>
       </footer>
     </div>
 
