@@ -3,40 +3,34 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Maxim</title>
+    <title>Maxim || Website</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="images/favicon-maxim.png" type="image/x-icon" />
+    <!-- Animate css  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- AOS css -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Box Icons -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   </head>
   <body>
-    <a href="#"><i class="bx bx-up-arrow-circle" data-aos="fade-in" title="Kembali ke Atas"></i></a>
+    <!-- btn back-to-top  -->
+    <div class="back-to-top">
+      <a href="#"><i class="bx bx-chevron-up" title="Kembali ke atas"></i></a>
+    </div>
+
     <!-- Header -->
     <header class="header">
       <div class="div">
-        <a href="#">
-          <img
-            src="./images/maxim-logo-brand.svg"
-            alt="logo"
-            class="header-logo"
-            data-aos="fade-down"
-            data-aos-duration="1000" />
-        </a>
+        <img
+          src="./images/maxim-logo-brand.svg"
+          alt="logo"
+          class="header-logo"
+          data-aos="fade-down"
+          data-aos-duration="1000" />
       </div>
-      <!-- Navigation -->
-      <!-- <nav class="navbar">
-          <ul class="navigation">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about" class="nav-about">About</a></li>
-            <li><a href="#review" class="nav-reviews">Review</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-          <div class="hamburger">
-            <i class="bx bx-menu"></i>
-          </div>
-        </nav> -->
     </header>
 
     <!-- Hero -->
@@ -47,14 +41,14 @@
           data-aos="fade-down-right"
           data-aos="fade-up-right"
           data-aos-duration="1000"
-          data-aos-delay="300">
+          data-aos-delay="500">
           Ter<span>hubung </span>setiap saat
         </h1>
         <div
           class="btn-hero"
           data-aos="fade-up-right"
           data-aos-duration="1000"
-          data-aos-delay="500">
+          data-aos-delay="1000">
           <a
             href="https://apps.apple.com/id/app/maxim-transportasi-delivery/id579985456?l=id"
             target="_blank"
@@ -69,7 +63,7 @@
           /></a>
         </div>
       </div>
-      <div class="hero-right" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="700">
+      <div class="hero-right" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="1300">
         <div class="motor">
           <img
             class="motor-yellow"
@@ -90,38 +84,6 @@
           <span>Maxim</span> merupakan layanan transportasi bagi masyarakat melalui jasa ojek dan
           taxi online
         </h2>
-      </div>
-    </section>
-
-    <!-- Show mockup -->
-    <section class="show-mockup">
-      <div class="show-mockup__left" data-aos="fade-right" data-aos-duration="1000">
-        <h2>UI yang modern dan mudah untuk di pahami</h2>
-        <a
-          href="https://www.figma.com/file/N3KvXmDYCMiWplt3RQf1ch/CLONE-APLIKASI-MAXIM?type=design&node-id=193%3A2&mode=design&t=iI8sxwnC0KBuka9p-1"
-          class="a"
-          >Selengkapnya <i class="bx bx-chevron-right"></i
-        ></a>
-      </div>
-      <div class="show-mockup__right">
-        <img
-          src="./images/mockup-2.svg"
-          alt=""
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="500" />
-        <img
-          src="./images/mockup-1.svg"
-          alt=""
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="700" />
-        <img
-          src="./images/mockup-3.svg"
-          alt=""
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="900" />
       </div>
     </section>
 
@@ -176,10 +138,44 @@
       </div>
     </section>
 
-    <!-- reviewer -->
+    <!-- Show mockup -->
+    <section class="show-mockup">
+      <div class="wrapper-mockup">
+        <div class="show-mockup__left" data-aos="fade-right" data-aos-duration="1000">
+          <h2>UI yang modern dan mudah untuk di pahami</h2>
+          <a
+            href="https://www.figma.com/proto/N3KvXmDYCMiWplt3RQf1ch/REDESIGN-APLIKASI-MAXIM?type=design&node-id=193-1286&t=vhsXg93lD8w2XVPJ-0&scaling=scale-down&page-id=193%3A2&starting-point-node-id=319%3A849"
+            class="a"
+            >Selengkapnya <i class="bx bx-chevron-right"></i
+          ></a>
+        </div>
+        <div class="show-mockup__right">
+          <img
+            src="./images/mockup-2.svg"
+            alt=""
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="500" />
+          <img
+            src="./images/mockup-1.svg"
+            alt=""
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="700" />
+          <img
+            src="./images/mockup-3.svg"
+            alt=""
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="900" />
+        </div>
+      </div>
+    </section>
+
+    <!-- review -->
     <section class="review" id="review">
       <h2>Read the reviews</h2>
-      <div class="wrapper">
+      <div class="wrapper-review">
         <div class="card" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="100">
           <div class="card-top">
             <div class="card-profile">
@@ -256,13 +252,13 @@
       <footer>
         <div class="social">
           <a href="https://www.instagram.com/eunlipp_/" target="_blank"
-            ><i class="bx bxl-instagram" style="color: #ffffff"></i
+            ><i class="bx bxl-instagram" style="color: #000"></i
           ></a>
-          <a href="https://www.facebook.com/profile.php?id=100015121082170" target="_blank"
-            ><i class="bx bxl-facebook-circle" style="color: #ffffff"></i
+          <a href="https://github.com/Eunlip" target="_blank"
+            ><i class="bx bxl-github" style="color: #000"></i
           ></a>
           <a href="mailto:agzmv123@gmail.com" target="_blank"
-            ><i class="bx bx-envelope" style="color: #ffffff"></i
+            ><i class="bx bx-envelope" style="color: #000"></i
           ></a>
         </div>
         <ul class="list-inline">
@@ -277,6 +273,7 @@
     </div>
 
     <script src="main.js"></script>
+
     <!-- AOS js -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

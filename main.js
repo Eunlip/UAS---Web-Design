@@ -1,15 +1,25 @@
 'use strict';
 
-const navbar = document.querySelector('.container');
-const nav_about = document.querySelector('.nav-about');
-const nav_reviews = document.querySelector('.nav-reviews');
-const aboutSection = document.getElementById('about');
+const backToTop = document.querySelector('.back-to-top');
+let lastScrollPosition = 0;
 
 window.addEventListener('scroll', () => {
+  const currentScrollPosition = window.scrollY;
+
   console.log(window.scrollY);
-  if (window.scrollY > 3340) {
-    document.querySelector('.bx-up-arrow-circle').style.opacity = 1;
+  if (window.scrollY > 1225) {
+    backToTop.style.opacity = 1;
+    backToTop.classList.remove('animate__animated');
+    backToTop.classList.remove('animate__backOutRight');
+    backToTop.classList.add('animate__animated');
+    backToTop.classList.add('animate__backInRight');
   } else {
-    document.querySelector('.bx-up-arrow-circle').style.opacity = 0;
+    if (currentScrollPosition < lastScrollPosition) {
+      backToTop.style.opacity = 0;
+      backToTop.classList.add('animate__animated');
+      backToTop.classList.add('animate__backOutRight');
+    }
   }
+
+  lastScrollPosition = currentScrollPosition;
 });
