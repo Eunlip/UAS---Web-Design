@@ -437,7 +437,7 @@ li {
 /* ===== BREAKPOINT ===== */
 
 /* Pada saat layar dibawah 640px */
-@media screen and (max-width: 640px) {
+/* @media screen and (max-width: 640px) {
   .container {
     padding: 0 2rem;
   }
@@ -454,3 +454,4 @@ li {
     display: block;
   }
 }
+ */
