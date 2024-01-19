@@ -47,6 +47,11 @@ li {
   background-color: var(--color-yellow);
   border-radius: 99px;
   opacity: 0;
+  transition: bottom .2s ease-out;
+}
+
+.back-to-top:hover {
+  bottom: 1.5rem;
 }
 
 /* Header */
